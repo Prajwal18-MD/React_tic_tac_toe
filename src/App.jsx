@@ -1,15 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-    
-     <h1 className='text-xl font-bold text-red-500'>hello</h1>
+    <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+        <div className="w-full max-w[400px] mx-5">
+        <h1 className="text-5xl font-semibold text-white mb-8 text-center">
+        Tic Tac Toe
+        </h1>
+
+        <div>
+          game status
+        </div>
+
+        <div className="girid grid-cols-3 gap-1 rounded-xl overflow-hidden mb-6">
+
+        </div>
+
+        <button className='w-full py-3 text-lg text-white border rounded-xl hover:bg-gray-50 hover:text-gray-800 transition-colors duration-200'>
+        NEW GAME
+        </button>
+        
+        </div>
+
+    </div>
     
     </>
   )
